@@ -1,0 +1,95 @@
+/* login-style.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0D7016;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#2DD958 ; /* Header background color */
+    padding: 15px; /* Padding for the header */
+    color: black; /* Text color */
+}
+
+.header .logo {
+    font-size: 24px; /* Logo font size */
+    font-weight: bold; /* Logo font weight */
+}
+
+.header .nav-links a {
+    margin-left: 20px; /* Space between links */
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Link color */
+    font-size: 16px; /* Link font size */
+}
+
+/* Login Container */
+.login-container {
+    background-color: #15BD24; /* Background color for the login container */
+    padding: 20px; /* Padding for the login container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    width: 300px; /* Width of the login container */
+    margin: 20px auto; /* Center the container */
+}
+
+h2 {
+    text-align: center; /* Center the heading */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%; /* Full width for inputs */
+    padding: 8px; /* Padding for inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+}
+
+.button-group {
+    display: flex; /* Flexbox for button group */
+    justify-content: space-between; /* Space between buttons */
+}
+
+button {
+    padding: 10px 15px; /* Padding for buttons */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor for buttons */
+}
+
+button[type="button"] {
+    background-color: #f44336; /* Red for back button */
+    color: white; /* Text color for back button */
+}
+
+button[type="submit"] {
+    background-color: #f44336; /* Green for continue button */
+    color: white; /* Text color for continue button */
+}
+
+button:hover {
+    opacity: 0.8; /* Hover effect for buttons */
+}

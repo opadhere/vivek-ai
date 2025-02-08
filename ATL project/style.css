@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Light background for light mode */
+    color: #000; /* Black text for light mode */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header {
+    background-color: #42BF15; /* Header background */
+    color: #000; /* Header text color */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #000; /* Link color */
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Hover color */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background-color: #0BA815 ; /* Dropdown button background */
+    color: #000; /* Dropdown button text color */
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.dropbtn:hover {
+    background-color: #365899; /* Dropdown button hover color */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white; /* Dropdown content background */
+    min-width: 160px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #000; /* Dropdown link color */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f4f8; /* Dropdown link hover color */
+}
+
+.main-container {
+    display: flex;
+    margin: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff; /* Sidebar background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.user-picture {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.theme-switch, .edit-profile {
+    background-color: #A2B7BF; /* Button background */
+    color: #000; /* Button text color */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.theme-switch:hover, .edit-profile:hover {
+    background-color: #365899; /* Button hover color */
+    transform: scale(1.05);
+}
+
+.chat-container {
+    flex-grow: 1;
+    background-color: #ffffff; /* Chat container background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+}
+
+.chat-history {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9; /* Chat history background */
+}
+
+.chat-history p {
+    margin: 5px 0;
+    color: #000; /* Chat history text color */
+}
+
+#user-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex-grow: 1;
+    margin-right: 10px;
+    transition: border-color 0.3s;
+}
+
+#user-input:focus
+#user-input:focus {
+    border-color: #4a90e2; /* Border color on focus */
+    outline: none;
+}
+
+#send-button {
+    background-color: #A2B7BF; /* Send button background */
+    color: #000; /* Send button text color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#send-button:hover {
+    background-color: #365899; /* Send button hover color */
+    transform: scale(1.05);
+}
+
+.edit-profile {
+    display: inline-block; /* Make it behave like a button */
+    background-color: #A2B7BF; /* Button background */
+    color: #000; /* Button text color */
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    text-align: center; /* Center text */
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%; /* Full width */
+    margin-bottom: 10px; /* Space below */
+}
+
+.edit-profile:hover {
+    background-color: #365899; /* Button hover color */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Dark Theme Styles */
+.dark-theme {
+    background-color: #333; /* Dark background for dark mode */
+    color: #f0f4f8; /* Light text for dark mode */
+}
+
+.dark-theme .header {
+    background-color: #222; /* Dark header background */
+    color: #f0f4f8; /* Light header text */
+}
+
+.dark-theme .nav-links a {
+    color: #f0f4f8; /* Light link color */
+}
+
+.dark-theme .sidebar {
+    background-color: #444; /* Dark sidebar background */
+    color: #f0f4f8; /* Light sidebar text */
+}
+
+.dark-theme .theme-switch,
+.dark-theme .edit-profile {
+    background-color: #555; /* Dark button background */
+    color: #f0f4f8; /* Light button text */
+}
+
+.dark-theme .theme-switch:hover,
+.dark-theme .edit-profile:hover {
+    background-color: #666; /* Dark button hover color */
+}
+
+.dark-theme .chat-container {
+    background-color: #444; /* Dark chat container background */
+}
+
+.dark-theme .chat-history {
+    background-color: #555; /* Dark chat history background */
+    border: 1px solid #666; /* Dark border for chat history */
+}
+
+.dark-theme .chat-history p {
+    color: #f0f4f8; /* Light text for chat history */
+}
+
+.dark-theme #user-input {
+    background-color: #666; /* Dark input background */
+    color: #f0f4f8; /* Light input text */
+    border: 1px solid #777; /* Dark border for input */
+}
+
+.dark-theme #user-input:focus {
+    border-color: #4a90e2; /* Border color on focus */
+}
+
+.dark-theme #send-button {
+    background-color: #555; /* Dark send button background */
+    color: #f0f4f8; /* Light send button text */
+}
+
+.dark-theme #send-button:hover {
+    background-color: #666; /* Dark send button hover color */
+}

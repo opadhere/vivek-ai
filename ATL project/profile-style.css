@@ -1,0 +1,77 @@
+/* Basic Reset */
+body {background-color: :;}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Profile Edit Container */
+.profile-edit-container {
+    background: #FFFE91;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.greeting-message {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.profile-edit-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color:#FFCE26;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+fieldset {
+    border: none;
+    margin: 10px 0;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.save-button {
+    background-color: #7AA344;
+    color: #fff;
+}
+
+.back-button {
+    background-color: #7AA344
+    }

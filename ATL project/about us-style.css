@@ -1,0 +1,127 @@
+h1{color: #1E7823;
+    font-family: arial, sans-serif;}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #1EE01D;
+    color: #E00A0D;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #0F5910;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #BB6ED6; /* Change color on hover */
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('') no-repeat center center/cover;
+    color: #0F7810;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.team, .mission, .contact {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #1E7823;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.team:hover, .mission:hover, .contact:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+h2, h3 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #239C4D;
+}
+
+img {
+    width: 50px; /* Set a fixed width for images */
+    height: auto;
+    border-radius: 50%; /* Make images circular */
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1); /* Enlarge image on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animation for list items */
+ul li {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+ul li:nth-child(1) { animation-delay: 0.1s; }
+ul li:nth-child(2) { animation-delay: 0.2s; }
+ul li:nth-child(3) { animation-delay: 0.3s; }
+ul li:nth-child(4) { animation-delay: 0.4s; }

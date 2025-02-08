@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login-style.css"> <!-- Updated link to the CSS file -->
+    <script src="login-script.js" defer></script> <!-- Updated link to the JavaScript file -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">vivek.ai</div>
+        <div class="nav-links">
+            <a href="#about">About Us</a>
+            <a href="#support">Customer Support</a>
+            <a href="login.html" id="login-button" onclick="return false;">Login</a> <!-- Disable link functionality -->
+        </div>
+    </header>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="vivek.html" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="button-group">
+                <button type="button" onclick="window.location.href='vivek.html'">Back</button>
+                <button type="submit">Continue</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+/* General body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: lightyellow;
+}
+
+/* Header styles */
+header {
+  background: yellow;
+  color: black;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+/* Section styles */
+section {
+  background: white;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative; /* Needed for absolute positioning of the back button */
+}
+
+/* Heading styles */
+h2 {
+  color: #333;
+}
+
+/* Label styles */
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+/* Input and textarea styles */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+}
+
+/* Button styles */
+button {
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Button hover effect */
+button:hover {
+  background: #0056B3;
+}
+
+/* Back button styles */
+.back-button {
+  display: inline-block; /* Make it behave like a button */
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-decoration: none; /* Remove underline */
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px; /* Space above the button */
+}
+
+/* Back button hover effect */
+.back-button:hover {
+  background: #0056B3;
+}
+
+/* FAQ item styles */
+.faq-item {
+  margin: 10px 0;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #007BFF;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

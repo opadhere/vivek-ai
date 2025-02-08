@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vivek.ai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">vivek.ai</div>
+        <div class="nav-links">
+            <a href="About us.html">About Us</a>
+            <a href="Customer support.html">Customer Support</a>
+            <div class="dropdown">
+                <button class="dropbtn">You</button>
+                <div class="dropdown-content">
+                    <a href="register.html">Register</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="sidebar">
+            <img src="user-placeholder.png" alt="User  " class="user-picture">
+            <button class="theme-switch">Switch to Dark Theme</button>
+        <a href="profile.html" class="edit-profile" id="edit-profile-button">Edit Profile</a></button> <!-- Changed to anchor tag -->
+        </div>
+        <div class="chat-container">
+            <div class="chat-box">
+                <div class="chat-history" id="chat-history"></div>
+                <input type="text" id="user-input" placeholder="Ask a question..." />
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
